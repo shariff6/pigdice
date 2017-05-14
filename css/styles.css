@@ -34,3 +34,10 @@ font-family: cursive;
 }
 #results1{display: none;}
 #results2{display: none;}
+
+.end{
+  text-align: center;
+  font-size: 70px;
+  font-style: italic;
+  font-family: fantasy;
+}
