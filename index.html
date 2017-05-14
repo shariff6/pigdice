@@ -1,0 +1,89 @@
+<html>
+
+  <head>
+    <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pig Dice</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 heading">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 title">
+          <h1>Welcome to PigDice</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 manual">
+          <h2>Gameplay Manual</h2>
+          <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold"
+
+            <br>If the player rolls a 1, they score nothing and it becomes the next player's turn.
+            <br>If the player rolls any other number, it is added to their turn total and the player's turn continues.
+            <br>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.
+            <br> The first player to score 100 or more points wins</p>
+          <button type="submit" class="btn btn-info btn-lg" id="begin">
+          <span class="glyphicon glyphicon-play-circle"></span> Play
+        </button>
+        </div>
+      </div>
+      <div class="row game">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 test">
+          <h1 id="playerName1"></h1>
+          <form id="player1">
+            <label for="PLAYER1">NAME</label>
+            <input type="text" class="form-control" placeholder="Enter your name" id="name1">
+            <button type="submit" class="button">Submit</button>
+          </form>
+          <div class="row side1">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <button type="submit" class="btn btn-success" id="roll1">ROLL</button>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <button type="submit" class="btn btn-warning" id="HOLD">HOLD</button>
+            </div>
+            <div id="result">
+              <h3>Result</h3>
+              <p>Currentscore : <span class="currentscore1"></span><br> Finalscore : <span class="finalscore1"></span></p>
+            </div>
+            <p id="results1"> Score : <span class="score"></span></p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 test">
+          <h1 id="playerName2"></h1>
+          <form id="player2"><label for="PLAYER1">NAME</label>
+            <input type="text" class="form-control" placeholder="Enter your name" id="name2">
+            <button type="submit" class="button">Submit</button>
+          </form>
+          <div class="row side2">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <button type="submit" class="btn btn-success" id="roll2" disabled>ROLL</button>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <button type="submit" class="btn btn-warning" id="HOLD2" disabled>HOLD</button>
+            </div>
+            <div id="results">
+              <h3>Result</h3>
+              <p>Currentscore : <span class="currentscore2"></span><br> Finalscore : <span class="finalscore2"></span></p>
+            </div>
+            <p id="results2"> Score : <span class="score2"></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="row end">
+      </div>
+      <div class="restart">
+        <a href="https://shariff6.github.io/pigdice/" class="btn btn-success btn-lg">
+          <span class="glyphicon glyphicon-repeat"></span> Repeat
+        </a>
+      </div>
+    </div>
+    </div>
+    </div>
