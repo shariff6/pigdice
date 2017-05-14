@@ -1,7 +1,36 @@
+.heading{
+  background-image: url(heading.jpg);
+  background-repeat: no-repeat;
+  height: 300px;
+  background-position: center;
+}
 h1{
+text-align: center;
+font-style: italic;
+font-family: cursive;
+}
+.title{
+  border: 0px;
+  border-bottom: 1px;
+  border-style: solid;
+
+}
+.manual{
   text-align: center;
-  font-style: italic;
 }
-.p1{
-  align-items: center;
+.test{
+  display: none;
+  border: 0px;
+  border-right: 1px;
+  border-style: solid;
 }
+.side1{
+  text-align: center;
+  display: none;
+}
+.side2{
+    text-align: center;
+    display: none;
+}
+#results1{display: none;}
+#results2{display: none;}
