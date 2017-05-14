@@ -55,7 +55,7 @@ $(document).ready(function() {
       }
       $(".currentscore1").text(player1result)
       $(".finalscore1").text(player1.currentScore)
-      if (player1.currentScore >= 20) {
+      if (player1.currentScore >= 100) {
         $(".game").hide(5000)
         $(".end").show().text(inputName1 + " " + "WINS WITH " + player1.currentScore + " POINTS")
         $(".restart").show()
@@ -88,7 +88,7 @@ $(document).ready(function() {
       }
       $(".currentscore2").text(player2result)
       $(".finalscore2").text(player2.currentScore)
-      if (player2.currentScore >= 20) {
+      if (player2.currentScore >= 100) {
         $(".game").hide(5000)
         $(".end").show().text(inputName2 + " " + "WINS WITH " + player2.currentScore + " POINTS")
         $(".restart").show()
